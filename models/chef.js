@@ -13,7 +13,7 @@ const Chef = new Schema(
         family: [{ type: Object, required: false }],
         profPic: { type: String, required: false },
     },
-    { timestamps: true },
+    { timestamps: true }
 )
 
-module.exports = mongoose.model('chefs', Chef)
+module.exports = Chef

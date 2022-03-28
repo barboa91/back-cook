@@ -4,10 +4,10 @@ const Schema = mongoose.Schema
 const Ingredient = new Schema(
     {
         name:{ type: String, required: true },
-        description: { type: String, required: true },
+        amount: { type: String, required: false },
         picture: { type: String, required: false }
     },
     { timestamps: true },
 )
 
-module.exports = mongoose.model('ingredients', Ingredient)
+module.exports = Ingredient

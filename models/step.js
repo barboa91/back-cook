@@ -10,4 +10,4 @@ const Picture = new Schema(
     { timestamps: true },
 )
 
-module.exports = mongoose.model('pictures', Picture)
+module.exports = Picture
