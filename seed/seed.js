@@ -18,10 +18,11 @@ const seed = async () =>{
     await chef.save();
     
     const recipe = new Recipe({
-        chef : chef._id,
+        chef : chef.username,
         name : "Banana Bread",
         difficulty : "easy",
         private : false,
+        pictures:["https://www.simplyrecipes.com/thmb/Sy5LXtSfHcXfTkkS36kmSvubqj8=/3299x3299/smart/filters:no_upscale()/Simply-Recipes-Easy-Banana-Bread-LEAD-2-2-63dd39af009945d58f5bf4c2ae8d6070.jpg"],
         ingredients : [{
             name : "white sugar",
             amount : "1/8th of a cup"

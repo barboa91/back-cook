@@ -4,7 +4,14 @@ const controller = require("../controllers")
 const router = Router();
 
 router.get('/', (req, res) => res.send('This is root!'))
+router.get('/chef/all',controller.getChefs)
 router.get('/chef/:id',controller.getChefById)
-router.post('/chef/createRecipe', controller.createRecipe)
+router.get('/recipe/all',controller.getRecipes)
+
+
+router.post('/createChef',controller.createChef)
+router.post('/createRecipe', controller.createRecipe)
+router.delete('/delRecipe/:id', controller.delRecipe)
+
 
 module.exports = router;
