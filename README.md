@@ -3,6 +3,8 @@
 This is a cook book app. This will be built on the MERN Stack
 
 
+[Front End](https://github.com/barboa91/front-cook)
+
 [Trello](https://trello.com/b/DOQXUKob/archimagirus)
 
 [Wireframe](https://wireframe.cc/iUAX7l)
